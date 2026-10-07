@@ -12,7 +12,7 @@ services:
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: .
-    plan: starter          # free tier sleeps; starter keeps the demo responsive
+    plan: free         # free tier sleeps; starter keeps the demo responsive
     healthCheckPath: /api/health
     envVars:
       - key: JWT_SECRET
@@ -22,11 +22,6 @@ services:
           type: web
           name: medvault-web
           property: host
-    disk:
-      name: medvault-db
-      mountPath: /app/database
-      sizeGB: 1
-
   - type: web
     name: medvault-web
     runtime: static
