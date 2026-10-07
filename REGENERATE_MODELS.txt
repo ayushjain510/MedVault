@@ -1,0 +1,20 @@
+This archive contains all source code, documentation and the raw synthetic
+dataset, but NOT the trained model binaries (*.pkl) or the engineered
+feature matrix (features.parquet) - together ~72 MB.
+
+Regenerate them in two commands from medvault/ml (a few minutes):
+
+    python features.py     # rebuilds ml/data/features.parquet
+    python train.py        # trains + writes ml/models/*.pkl
+    python explain.py      # rebuilds global SHAP importances
+
+Then seed the database and start the app from medvault/backend:
+
+    python seed.py
+    python -m uvicorn app.main:app --port 8000
+
+Frontend, from medvault/frontend:
+
+    npm install && npm run dev
+
+Results are reproducible: the pipeline is seeded (seed=42).

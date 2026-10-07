@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "n_patients": 240,
+  "note": "SYNTHETIC DEMONSTRATION DATA - not real patients",
+  "state_names": {
+    "0": "Stable / Low Concern",
+    "1": "At Risk",
+    "2": "Active Sepsis / Concerning",
+    "3": "Severe / Deteriorating",
+    "4": "Treatment Response",
+    "5": "Recovery",
+    "6": "Persistent / Non-responding",
+    "7": "Escalation Required"
+  }
+}

@@ -1,0 +1,11 @@
+# Keep images small and reproducible: never ship the dev database, node
+# modules, build output or caches. The container seeds its own database from
+# the trained models in ml/models on first boot.
+database/*.db
+**/node_modules
+frontend/dist
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.git
+*.log

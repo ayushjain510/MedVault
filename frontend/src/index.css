@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* MedVault light clinical theme — white surface, red/green semantics.
+   Colour is reserved for meaning: green = favourable, red = concern (escalating
+   by intensity), neutral grey = informational or insufficient data. Chrome is
+   white/grey so that a red badge always reads as a signal, never as decoration. */
+:root {
+  color-scheme: light;
+
+  --mv-surface: #ffffff;
+  --mv-surface-alt: #f8fafc;
+  --mv-border: #e2e8f0;
+  --mv-text: #0f172a;
+  --mv-text-muted: #64748b;
+
+  --mv-good: #15803d;      /* green-700  favourable */
+  --mv-good-soft: #f0fdf4; /* green-50   favourable fill */
+  --mv-bad: #b91c1c;       /* red-700    critical */
+  --mv-bad-mid: #dc2626;   /* red-600    high */
+  --mv-bad-soft: #fef2f2;  /* red-50     moderate fill */
+  --mv-grid: #e2e8f0;
+  --mv-axis: #94a3b8;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }

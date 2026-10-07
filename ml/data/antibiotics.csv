@@ -1,0 +1,136 @@
+patient_id,start_hour,abx_class,duration_hours,culture_taken,culture_positive,organism,susceptible
+P0001,13,Carbapenem,67,True,False,P. aeruginosa,True
+P0002,13,Beta-lactam,56,True,False,K. pneumoniae,False
+P0003,22,Carbapenem,57,True,True,S. pneumoniae,False
+P0004,16,Aminoglycoside,64,True,False,K. pneumoniae,True
+P0005,14,Fluoroquinolone,34,False,True,,True
+P0006,13,Fluoroquinolone,35,True,True,,True
+P0009,16,Glycopeptide,49,True,False,S. pneumoniae,True
+P0010,21,Beta-lactam,54,True,False,E. coli,True
+P0011,19,Aminoglycoside,56,True,True,P. aeruginosa,True
+P0014,17,Glycopeptide,33,True,True,,True
+P0015,20,Carbapenem,76,True,True,E. coli,False
+P0017,17,Aminoglycoside,52,False,False,K. pneumoniae,True
+P0018,19,Carbapenem,70,True,False,,True
+P0019,13,Aminoglycoside,67,True,False,K. pneumoniae,False
+P0020,9,Glycopeptide,57,True,True,E. coli,True
+P0021,13,Aminoglycoside,70,True,False,,False
+P0024,17,Fluoroquinolone,79,True,False,K. pneumoniae,False
+P0025,15,Glycopeptide,72,True,True,S. aureus,False
+P0026,9,Glycopeptide,60,True,False,,True
+P0031,14,Fluoroquinolone,73,True,True,S. aureus,True
+P0032,22,Aminoglycoside,46,True,False,S. aureus,True
+P0033,15,Carbapenem,76,True,False,S. aureus,True
+P0036,9,Glycopeptide,57,True,True,K. pneumoniae,True
+P0038,11,Fluoroquinolone,71,True,True,S. pneumoniae,True
+P0039,13,Glycopeptide,64,True,True,,True
+P0041,17,Fluoroquinolone,40,True,True,,True
+P0042,9,Carbapenem,79,True,False,E. coli,True
+P0043,14,Glycopeptide,43,True,True,S. pneumoniae,False
+P0045,9,Fluoroquinolone,57,True,False,E. coli,True
+P0046,10,Carbapenem,50,True,True,P. aeruginosa,True
+P0048,22,Beta-lactam,48,True,True,S. aureus,True
+P0050,13,Glycopeptide,64,True,True,S. pneumoniae,True
+P0051,7,Aminoglycoside,65,True,False,E. coli,True
+P0055,13,Aminoglycoside,35,True,True,E. coli,True
+P0058,14,Aminoglycoside,79,True,False,S. pneumoniae,True
+P0062,12,Carbapenem,50,True,False,E. coli,True
+P0064,13,Glycopeptide,48,True,True,K. pneumoniae,False
+P0065,11,Carbapenem,48,True,True,S. aureus,True
+P0066,11,Aminoglycoside,57,True,False,P. aeruginosa,False
+P0069,20,Carbapenem,64,True,False,,False
+P0070,18,Beta-lactam,44,True,True,,False
+P0071,15,Aminoglycoside,39,True,False,,False
+P0073,14,Carbapenem,36,True,False,,True
+P0076,22,Carbapenem,66,True,True,P. aeruginosa,False
+P0077,11,Carbapenem,60,False,False,,False
+P0078,12,Glycopeptide,76,True,True,,True
+P0080,22,Beta-lactam,67,True,True,,True
+P0081,9,Fluoroquinolone,79,False,True,K. pneumoniae,True
+P0082,18,Beta-lactam,33,True,True,S. pneumoniae,True
+P0087,19,Beta-lactam,48,True,True,,False
+P0088,17,Fluoroquinolone,40,True,True,,False
+P0091,10,Aminoglycoside,61,True,False,P. aeruginosa,False
+P0100,13,Beta-lactam,64,True,False,,True
+P0104,20,Beta-lactam,67,True,True,,True
+P0105,10,Glycopeptide,69,False,True,,True
+P0107,9,Beta-lactam,79,True,False,,True
+P0109,17,Beta-lactam,52,True,True,E. coli,True
+P0110,9,Aminoglycoside,61,True,False,K. pneumoniae,False
+P0111,8,Beta-lactam,80,True,True,,True
+P0112,17,Beta-lactam,41,True,True,E. coli,True
+P0113,22,Fluoroquinolone,70,True,True,K. pneumoniae,True
+P0116,10,Glycopeptide,58,True,True,,True
+P0118,18,Beta-lactam,73,True,False,,True
+P0119,14,Glycopeptide,54,False,False,S. pneumoniae,False
+P0120,19,Fluoroquinolone,57,True,True,P. aeruginosa,True
+P0122,15,Glycopeptide,49,True,True,,True
+P0123,24,Aminoglycoside,52,True,True,,True
+P0127,19,Beta-lactam,47,True,True,S. aureus,True
+P0129,18,Carbapenem,55,True,False,,False
+P0131,12,Fluoroquinolone,42,True,True,S. pneumoniae,True
+P0132,8,Aminoglycoside,58,True,True,K. pneumoniae,False
+P0133,15,Fluoroquinolone,38,True,False,S. pneumoniae,True
+P0135,17,Carbapenem,53,True,True,,True
+P0136,17,Aminoglycoside,52,True,True,S. aureus,False
+P0137,8,Carbapenem,46,True,True,E. coli,True
+P0139,16,Beta-lactam,36,True,False,E. coli,False
+P0140,13,Glycopeptide,49,True,True,,False
+P0143,11,Beta-lactam,65,False,True,S. pneumoniae,True
+P0144,16,Glycopeptide,80,True,False,K. pneumoniae,False
+P0145,7,Beta-lactam,48,True,True,,True
+P0147,12,Beta-lactam,51,True,False,S. pneumoniae,True
+P0148,11,Carbapenem,52,True,True,,False
+P0149,13,Fluoroquinolone,42,True,True,,False
+P0153,19,Beta-lactam,62,True,True,S. pneumoniae,False
+P0154,20,Glycopeptide,67,False,False,S. aureus,False
+P0156,11,Beta-lactam,44,True,False,,True
+P0158,10,Fluoroquinolone,40,True,False,K. pneumoniae,True
+P0159,11,Beta-lactam,53,True,True,,True
+P0161,14,Beta-lactam,51,True,False,,True
+P0162,8,Fluoroquinolone,57,True,False,,True
+P0163,11,Carbapenem,79,True,True,,False
+P0164,17,Beta-lactam,77,True,True,E. coli,True
+P0166,21,Aminoglycoside,40,False,False,P. aeruginosa,True
+P0168,19,Aminoglycoside,48,True,False,,False
+P0169,16,Aminoglycoside,40,True,False,S. pneumoniae,False
+P0171,22,Glycopeptide,71,True,True,,False
+P0176,21,Aminoglycoside,50,True,False,K. pneumoniae,False
+P0179,19,Glycopeptide,54,True,True,,True
+P0180,10,Fluoroquinolone,60,True,True,P. aeruginosa,False
+P0181,14,Beta-lactam,37,True,True,,True
+P0182,23,Aminoglycoside,59,True,True,S. aureus,True
+P0183,10,Beta-lactam,74,True,True,S. aureus,True
+P0185,15,Aminoglycoside,47,True,True,,True
+P0186,18,Glycopeptide,57,True,True,P. aeruginosa,False
+P0187,8,Carbapenem,65,True,False,,True
+P0188,16,Carbapenem,38,False,False,E. coli,True
+P0195,8,Aminoglycoside,53,True,True,S. aureus,True
+P0196,14,Beta-lactam,44,True,True,,False
+P0198,19,Beta-lactam,45,True,False,E. coli,True
+P0201,13,Fluoroquinolone,64,True,True,P. aeruginosa,True
+P0202,14,Aminoglycoside,46,True,False,P. aeruginosa,True
+P0205,19,Glycopeptide,63,False,True,K. pneumoniae,True
+P0206,12,Beta-lactam,37,True,False,S. aureus,True
+P0207,20,Aminoglycoside,46,True,False,,False
+P0208,12,Aminoglycoside,76,True,True,,True
+P0210,19,Glycopeptide,58,True,False,S. aureus,False
+P0211,19,Glycopeptide,75,True,True,S. aureus,True
+P0212,17,Glycopeptide,71,True,True,E. coli,True
+P0213,21,Beta-lactam,51,True,False,,True
+P0214,13,Beta-lactam,80,True,True,S. pneumoniae,True
+P0218,18,Fluoroquinolone,75,True,True,K. pneumoniae,True
+P0219,11,Aminoglycoside,37,True,True,,True
+P0220,16,Carbapenem,60,True,True,K. pneumoniae,False
+P0221,15,Glycopeptide,36,False,True,K. pneumoniae,True
+P0222,15,Carbapenem,67,True,True,,True
+P0223,7,Carbapenem,56,True,True,P. aeruginosa,True
+P0224,7,Fluoroquinolone,86,True,True,S. aureus,False
+P0226,19,Fluoroquinolone,36,False,False,,True
+P0227,21,Fluoroquinolone,61,True,True,P. aeruginosa,True
+P0228,12,Aminoglycoside,63,True,True,E. coli,True
+P0229,11,Aminoglycoside,57,True,True,K. pneumoniae,False
+P0237,18,Aminoglycoside,31,True,False,K. pneumoniae,False
+P0238,13,Carbapenem,49,False,True,S. aureus,True
+P0239,7,Fluoroquinolone,86,True,True,S. aureus,True
+P0240,20,Beta-lactam,47,True,True,S. aureus,True

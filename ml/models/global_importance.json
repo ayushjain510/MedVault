@@ -1,0 +1,737 @@
+{
+  "sepsis_state": {
+    "model": "xgboost",
+    "top_features": [
+      {
+        "feature": "hrs_since_abx",
+        "label": "Hours since antibiotic start",
+        "importance": 0.84292
+      },
+      {
+        "feature": "fluid_input_mean_3",
+        "label": "Fluid input mean (3h)",
+        "importance": 0.63243
+      },
+      {
+        "feature": "fluid_input_cur",
+        "label": "Fluid input current",
+        "importance": 0.57421
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.2133
+      },
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.20096
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.17563
+      },
+      {
+        "feature": "lactate_max_24",
+        "label": "Lactate max (24h)",
+        "importance": 0.15796
+      },
+      {
+        "feature": "fluid_input_max_6",
+        "label": "Fluid input max (6h)",
+        "importance": 0.15416
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.11457
+      },
+      {
+        "feature": "on_abx",
+        "label": "On antibiotics",
+        "importance": 0.10537
+      },
+      {
+        "feature": "fluid_input_mean_12",
+        "label": "Fluid input mean (12h)",
+        "importance": 0.09816
+      },
+      {
+        "feature": "spo2_mean_3",
+        "label": "SpO2 mean (3h)",
+        "importance": 0.09672
+      },
+      {
+        "feature": "fluid_input_min_6",
+        "label": "Fluid input min (6h)",
+        "importance": 0.09491
+      },
+      {
+        "feature": "lactate_max_6",
+        "label": "Lactate max (6h)",
+        "importance": 0.08653
+      },
+      {
+        "feature": "temperature_mean_3",
+        "label": "Temperature mean (3h)",
+        "importance": 0.07707
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.0765
+      },
+      {
+        "feature": "shock_index",
+        "label": "Shock index (HR/SBP)",
+        "importance": 0.07315
+      },
+      {
+        "feature": "spo2_cur",
+        "label": "SpO2 current",
+        "importance": 0.07129
+      },
+      {
+        "feature": "lactate_cur",
+        "label": "Lactate current",
+        "importance": 0.06808
+      },
+      {
+        "feature": "bilirubin_max_24",
+        "label": "Bilirubin max (24h)",
+        "importance": 0.06478
+      }
+    ]
+  },
+  "deterioration_6h": {
+    "model": "random_forest",
+    "top_features": [
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.02593
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.02471
+      },
+      {
+        "feature": "fluid_input_slope_6",
+        "label": "Fluid input trend (6h)",
+        "importance": 0.01739
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.01582
+      },
+      {
+        "feature": "temperature_slope_12",
+        "label": "Temperature trend (12h)",
+        "importance": 0.01528
+      },
+      {
+        "feature": "fluid_input_mean_12",
+        "label": "Fluid input mean (12h)",
+        "importance": 0.0152
+      },
+      {
+        "feature": "resp_rate_cur",
+        "label": "Respiratory rate current",
+        "importance": 0.0148
+      },
+      {
+        "feature": "resp_rate_mean_3",
+        "label": "Respiratory rate mean (3h)",
+        "importance": 0.0141
+      },
+      {
+        "feature": "fluid_input_delta_3",
+        "label": "Fluid input change (3h)",
+        "importance": 0.01342
+      },
+      {
+        "feature": "fluid_input_cur",
+        "label": "Fluid input current",
+        "importance": 0.01223
+      },
+      {
+        "feature": "fluid_input_min_24",
+        "label": "Fluid input min (24h)",
+        "importance": 0.01196
+      },
+      {
+        "feature": "shock_index",
+        "label": "Shock index (HR/SBP)",
+        "importance": 0.00934
+      },
+      {
+        "feature": "resp_rate_max_6",
+        "label": "Respiratory rate max (6h)",
+        "importance": 0.00897
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.00826
+      },
+      {
+        "feature": "fluid_input_mean_3",
+        "label": "Fluid input mean (3h)",
+        "importance": 0.00826
+      },
+      {
+        "feature": "fluid_input_min_6",
+        "label": "Fluid input min (6h)",
+        "importance": 0.00767
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.00749
+      },
+      {
+        "feature": "heart_rate_slope_6",
+        "label": "Heart rate trend (6h)",
+        "importance": 0.00749
+      },
+      {
+        "feature": "map_slope_12",
+        "label": "MAP trend (12h)",
+        "importance": 0.0074
+      },
+      {
+        "feature": "fluid_input_std_6",
+        "label": "Fluid input variability (6h)",
+        "importance": 0.00729
+      }
+    ]
+  },
+  "deterioration_12h": {
+    "model": "random_forest",
+    "top_features": [
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.04194
+      },
+      {
+        "feature": "fluid_input_mean_12",
+        "label": "Fluid input mean (12h)",
+        "importance": 0.02566
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.02203
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.02094
+      },
+      {
+        "feature": "temperature_slope_12",
+        "label": "Temperature trend (12h)",
+        "importance": 0.01312
+      },
+      {
+        "feature": "fluid_input_slope_6",
+        "label": "Fluid input trend (6h)",
+        "importance": 0.01311
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.01157
+      },
+      {
+        "feature": "resp_rate_mean_3",
+        "label": "Respiratory rate mean (3h)",
+        "importance": 0.00996
+      },
+      {
+        "feature": "fluid_input_cur",
+        "label": "Fluid input current",
+        "importance": 0.0099
+      },
+      {
+        "feature": "fluid_input_min_6",
+        "label": "Fluid input min (6h)",
+        "importance": 0.00875
+      },
+      {
+        "feature": "resp_rate_cur",
+        "label": "Respiratory rate current",
+        "importance": 0.00862
+      },
+      {
+        "feature": "fluid_input_min_24",
+        "label": "Fluid input min (24h)",
+        "importance": 0.00828
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.00797
+      },
+      {
+        "feature": "resp_rate_mean_6",
+        "label": "Respiratory rate mean (6h)",
+        "importance": 0.00793
+      },
+      {
+        "feature": "lactate_cur",
+        "label": "Lactate current",
+        "importance": 0.00789
+      },
+      {
+        "feature": "bilirubin_max_24",
+        "label": "Bilirubin max (24h)",
+        "importance": 0.00721
+      },
+      {
+        "feature": "map_slope_12",
+        "label": "MAP trend (12h)",
+        "importance": 0.00718
+      },
+      {
+        "feature": "resp_rate_max_6",
+        "label": "Respiratory rate max (6h)",
+        "importance": 0.00703
+      },
+      {
+        "feature": "fluid_input_mean_3",
+        "label": "Fluid input mean (3h)",
+        "importance": 0.007
+      },
+      {
+        "feature": "fluid_input_delta_3",
+        "label": "Fluid input change (3h)",
+        "importance": 0.00642
+      }
+    ]
+  },
+  "deterioration_24h": {
+    "model": "random_forest",
+    "top_features": [
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.03851
+      },
+      {
+        "feature": "fluid_input_mean_12",
+        "label": "Fluid input mean (12h)",
+        "importance": 0.02811
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.02155
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.01713
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.01646
+      },
+      {
+        "feature": "bilirubin_std_24",
+        "label": "Bilirubin variability (24h)",
+        "importance": 0.01215
+      },
+      {
+        "feature": "creatinine_std_24",
+        "label": "Creatinine variability (24h)",
+        "importance": 0.01116
+      },
+      {
+        "feature": "fluid_input_slope_6",
+        "label": "Fluid input trend (6h)",
+        "importance": 0.01007
+      },
+      {
+        "feature": "lactate_std_24",
+        "label": "Lactate variability (24h)",
+        "importance": 0.01005
+      },
+      {
+        "feature": "fluid_input_min_24",
+        "label": "Fluid input min (24h)",
+        "importance": 0.00996
+      },
+      {
+        "feature": "platelets_std_24",
+        "label": "Platelets variability (24h)",
+        "importance": 0.00994
+      },
+      {
+        "feature": "temperature_slope_12",
+        "label": "Temperature trend (12h)",
+        "importance": 0.00987
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.00977
+      },
+      {
+        "feature": "lactate_cur",
+        "label": "Lactate current",
+        "importance": 0.00945
+      },
+      {
+        "feature": "resp_rate_mean_3",
+        "label": "Respiratory rate mean (3h)",
+        "importance": 0.00907
+      },
+      {
+        "feature": "resp_rate_cur",
+        "label": "Respiratory rate current",
+        "importance": 0.00904
+      },
+      {
+        "feature": "bilirubin_max_24",
+        "label": "Bilirubin max (24h)",
+        "importance": 0.00895
+      },
+      {
+        "feature": "fluid_input_cur",
+        "label": "Fluid input current",
+        "importance": 0.00866
+      },
+      {
+        "feature": "fluid_input_mean_3",
+        "label": "Fluid input mean (3h)",
+        "importance": 0.00862
+      },
+      {
+        "feature": "fluid_input_min_6",
+        "label": "Fluid input min (6h)",
+        "importance": 0.00844
+      }
+    ]
+  },
+  "antibiotic_response": {
+    "model": "random_forest",
+    "top_features": [
+      {
+        "feature": "hrs_since_abx",
+        "label": "Hours since antibiotic start",
+        "importance": 0.04018
+      },
+      {
+        "feature": "on_abx",
+        "label": "On antibiotics",
+        "importance": 0.0284
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.01297
+      },
+      {
+        "feature": "lactate_max_6",
+        "label": "Lactate max (6h)",
+        "importance": 0.0098
+      },
+      {
+        "feature": "fluid_input_max_6",
+        "label": "Fluid input max (6h)",
+        "importance": 0.00949
+      },
+      {
+        "feature": "resp_rate_max_6",
+        "label": "Respiratory rate max (6h)",
+        "importance": 0.00755
+      },
+      {
+        "feature": "temperature_mean_3",
+        "label": "Temperature mean (3h)",
+        "importance": 0.00747
+      },
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.00746
+      },
+      {
+        "feature": "lactate_mean_3",
+        "label": "Lactate mean (3h)",
+        "importance": 0.0071
+      },
+      {
+        "feature": "fluid_input_mean_3",
+        "label": "Fluid input mean (3h)",
+        "importance": 0.00695
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.00678
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.00671
+      },
+      {
+        "feature": "temperature_mean_6",
+        "label": "Temperature mean (6h)",
+        "importance": 0.00646
+      },
+      {
+        "feature": "fluid_input_cur",
+        "label": "Fluid input current",
+        "importance": 0.00616
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.00567
+      },
+      {
+        "feature": "bilirubin_cur",
+        "label": "Bilirubin current",
+        "importance": 0.00546
+      },
+      {
+        "feature": "net_fluid_6h",
+        "label": "Net fluid balance (6h)",
+        "importance": 0.0052
+      },
+      {
+        "feature": "lactate_mean_12",
+        "label": "Lactate mean (12h)",
+        "importance": 0.00505
+      },
+      {
+        "feature": "fluid_input_slope_6",
+        "label": "Fluid input trend (6h)",
+        "importance": 0.00467
+      },
+      {
+        "feature": "bilirubin_max_24",
+        "label": "Bilirubin max (24h)",
+        "importance": 0.00466
+      }
+    ]
+  },
+  "fluid_status": {
+    "model": "lightgbm",
+    "top_features": [
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 1.57208
+      },
+      {
+        "feature": "urine_output_mean_6",
+        "label": "Urine output mean (6h)",
+        "importance": 0.47457
+      },
+      {
+        "feature": "net_fluid_6h",
+        "label": "Net fluid balance (6h)",
+        "importance": 0.3779
+      },
+      {
+        "feature": "map_cur",
+        "label": "MAP current",
+        "importance": 0.21479
+      },
+      {
+        "feature": "wbc_std_24",
+        "label": "WBC variability (24h)",
+        "importance": 0.13876
+      },
+      {
+        "feature": "creatinine_std_24",
+        "label": "Creatinine variability (24h)",
+        "importance": 0.13491
+      },
+      {
+        "feature": "lactate_std_24",
+        "label": "Lactate variability (24h)",
+        "importance": 0.09592
+      },
+      {
+        "feature": "creatinine_slope_12",
+        "label": "Creatinine trend (12h)",
+        "importance": 0.09511
+      },
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.0853
+      },
+      {
+        "feature": "lactate_mean_24",
+        "label": "Lactate mean (24h)",
+        "importance": 0.07453
+      },
+      {
+        "feature": "platelets_std_24",
+        "label": "Platelets variability (24h)",
+        "importance": 0.07036
+      },
+      {
+        "feature": "bilirubin_std_24",
+        "label": "Bilirubin variability (24h)",
+        "importance": 0.06033
+      },
+      {
+        "feature": "fluid_input_min_24",
+        "label": "Fluid input min (24h)",
+        "importance": 0.0578
+      },
+      {
+        "feature": "lactate_mean_12",
+        "label": "Lactate mean (12h)",
+        "importance": 0.05476
+      },
+      {
+        "feature": "hrs_since_abx",
+        "label": "Hours since antibiotic start",
+        "importance": 0.05462
+      },
+      {
+        "feature": "fluid_output_slope_12",
+        "label": "Fluid output trend (12h)",
+        "importance": 0.04769
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.04705
+      },
+      {
+        "feature": "fluid_output_mean_6",
+        "label": "Fluid output mean (6h)",
+        "importance": 0.04665
+      },
+      {
+        "feature": "fluid_output_mean_12",
+        "label": "Fluid output mean (12h)",
+        "importance": 0.04259
+      },
+      {
+        "feature": "dbp_std_24",
+        "label": "Diastolic BP variability (24h)",
+        "importance": 0.03994
+      }
+    ]
+  },
+  "recovery": {
+    "model": "random_forest",
+    "top_features": [
+      {
+        "feature": "bilirubin_std_24",
+        "label": "Bilirubin variability (24h)",
+        "importance": 0.01029
+      },
+      {
+        "feature": "creatinine_std_24",
+        "label": "Creatinine variability (24h)",
+        "importance": 0.00965
+      },
+      {
+        "feature": "lactate_std_24",
+        "label": "Lactate variability (24h)",
+        "importance": 0.00894
+      },
+      {
+        "feature": "platelets_std_24",
+        "label": "Platelets variability (24h)",
+        "importance": 0.00893
+      },
+      {
+        "feature": "lactate_max_6",
+        "label": "Lactate max (6h)",
+        "importance": 0.00882
+      },
+      {
+        "feature": "wbc_std_24",
+        "label": "WBC variability (24h)",
+        "importance": 0.00833
+      },
+      {
+        "feature": "fluid_input_max_24",
+        "label": "Fluid input max (24h)",
+        "importance": 0.00723
+      },
+      {
+        "feature": "bilirubin_max_6",
+        "label": "Bilirubin max (6h)",
+        "importance": 0.00718
+      },
+      {
+        "feature": "bilirubin_mean_6",
+        "label": "Bilirubin mean (6h)",
+        "importance": 0.00637
+      },
+      {
+        "feature": "fluid_input_max_6",
+        "label": "Fluid input max (6h)",
+        "importance": 0.00611
+      },
+      {
+        "feature": "fluid_input_mean_12",
+        "label": "Fluid input mean (12h)",
+        "importance": 0.00566
+      },
+      {
+        "feature": "bilirubin_mean_3",
+        "label": "Bilirubin mean (3h)",
+        "importance": 0.0056
+      },
+      {
+        "feature": "fluid_input_mean_24",
+        "label": "Fluid input mean (24h)",
+        "importance": 0.00538
+      },
+      {
+        "feature": "bilirubin_cur",
+        "label": "Bilirubin current",
+        "importance": 0.00505
+      },
+      {
+        "feature": "fluid_input_mean_6",
+        "label": "Fluid input mean (6h)",
+        "importance": 0.00469
+      },
+      {
+        "feature": "fluid_input_slope_12",
+        "label": "Fluid input trend (12h)",
+        "importance": 0.00468
+      },
+      {
+        "feature": "resp_rate_mean_3",
+        "label": "Respiratory rate mean (3h)",
+        "importance": 0.0045
+      },
+      {
+        "feature": "lactate_mean_3",
+        "label": "Lactate mean (3h)",
+        "importance": 0.00445
+      },
+      {
+        "feature": "lactate_mean_6",
+        "label": "Lactate mean (6h)",
+        "importance": 0.00434
+      },
+      {
+        "feature": "cum_fluid_balance",
+        "label": "Cumulative fluid balance",
+        "importance": 0.00429
+      }
+    ]
+  }
+}
