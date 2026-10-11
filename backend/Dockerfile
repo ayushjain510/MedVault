@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/* \
     && pip install --no-cache-dir -r requirements.txt
+    
 COPY backend/ ./backend/
 COPY ml/ ./ml/
 COPY database/schema.sql ./database/
